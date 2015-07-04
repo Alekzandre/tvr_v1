@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>{{.}}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="/assets/js/list.jquery.js"></script>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<style> 
+   .quote_size {font-size: 1px;}
+</style>
+</head>
+<body>
+     <!-- <div class="container"> -->
+        <nav role="navigation" class="navbar navbar-inverse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">42 & Michel</a>
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+               <!--     <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span>  Home</a></li> -->
+                        <li id="navbar_video"><a href="/video"><span class="glyphicon glyphicon-facetime-video"></span> Edit Playlist</a></li>
+                        <li id="navbar_video_create"><a href="/video/create"><span class="glyphicon glyphicon-facetime-video"></span> Create Playlist</a></li>
+                        <li id="navbar_video_upload"><a href="/video/upload"><span class="glyphicon glyphicon-facetime-video"></span> Upload Video</a></li>
+                </ul>
+            </div>
+        </nav>
+  <!--  </div> -->
+  <script>
+var navbar_active = '{{.}}';
+  </script>
